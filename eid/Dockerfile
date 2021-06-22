@@ -5,7 +5,7 @@ RUN apt update && apt install -y unzip build-essential openjdk-7-jdk
 
 ENV VERSAO_EID=1.3.7 \
     JARO_WINKLER_DIR=/opt/eid-1.3.7/lib \
-    JAVA_OPTS="-XX:MaxPermSize=512M -Xmx512M -Duser.timezone=America/Manaus -Duser.language=pt -Duser.country=BR -Djava.library.path=/opt/eid-1.3.7/lib -Dfile.encoding=UTF-8" \
+    JAVA_OPTS="-XX:MaxPermSize=512M -Xmx512M -Duser.timezone=America/Sao_Paulo -Duser.language=pt -Duser.country=BR -Djava.library.path=/opt/eid-1.3.7/lib -Dfile.encoding=UTF-8" \
     JRE_HOME=/usr/lib/jvm/java-7-openjdk-amd64 \
     JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64
 
