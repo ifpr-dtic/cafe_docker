@@ -12,6 +12,7 @@ ENV VERSAO_EID=1.3.7 \
 COPY files /tmp/
 
 RUN mv /tmp/mysql-connector-java-5.1.48-bin.jar /usr/share/java/; \
+    mv /tmp/postgresql-42.2.22.jre7.jar /usr/share/java/; \
     ln -sf /usr/share/java/mysql-connector-java-5.1.48-bin.jar /usr/local/tomcat/lib/; \
     mv /tmp/tomcat-dbcp.jar /usr/local/tomcat/lib/; \
     mkdir /opt/eid-1.3.7/; \
